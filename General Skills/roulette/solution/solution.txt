@@ -1,0 +1,29 @@
+The code generate random numbers between 1-36 and the user can bat his money to gain our bet.
+There is a 1/36 chance to be correct when guessing, this is not so good.
+
+To get the flag the user must win at-least 3 times an below 16 times 
+	and end-up with one billion.
+The maximum initial money is 5000$.
+So the maximum possible money is: 5000 * 2 ^ 16 = 327,680,000
+This in not enough :<
+So we must find a good way for guessing and some way to gain more money.
+
+I copied the relevant parts from the roulette code to predictor ( the rand() parts ).
+Luckily for use the initial money is the seed of srand.
+So, because we know the seed we can also predict all the following values (pseudo random generator).
+This is the first bug, being able to predict the roulette values before the happen.
+Note: use compile.sh to compile the predictor.
+
+The second bug is an integer overflow.
+We can't bet more then the money we have.
+LONG_MAX on a 32 bit compiler is 2,147,483,647.
+fore example, if we will bet 8,000,000,000$ this is bigger the LONG_MAX 
+	so it will become -589,934,592 which is lower the the amount of money we have.
+But if we will loss on purpose we will loss -589,934,592 which will
+	give us a 589,934,592$ :)
+	
+Note: the code actually sort of protects against overflow by using uint64_t and
+		iterating over every digit from left to right 
+		and if the number is bigger then LONG_MAX it is set it to LONG_MAX.
+	But, thats happens at the start of the loop, so if the last digit generates a number
+		that will cause integer overflow the corrections will not be preformed because the loop ended.

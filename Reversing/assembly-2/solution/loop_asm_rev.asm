@@ -1,0 +1,21 @@
+asm2(0xe, 0x21):
+	push   	ebp
+	mov    	ebp,esp
+	sub    	esp,0x10
+	mov    	eax,DWORD PTR [ebp+0xc] ; arg_1 = ebp+0xc = 0x21
+	mov 	DWORD PTR [ebp-0x4],eax ; copy 0x21 into ebp-0x4
+	mov    	eax,DWORD PTR [ebp+0x8] ; arg_0 = ebp+0x8 = 0x0e
+	mov		DWORD PTR [ebp-0x8],eax ; copy 0x0e into ebp-0x8
+	jmp    	part_b
+part_a:	
+	add    	DWORD PTR [ebp-0x4],0x1  ; (ebp-0x4) += 1
+	add		DWORD PTR [ebp+0x8],0x41 ; arg_0 += 0x41
+part_b:	
+	cmp    	DWORD PTR [ebp+0x8],0x9886 ; loop while arg_0 <= 0x9886
+	jle    	part_a
+	mov    	eax,DWORD PTR [ebp-0x4] ; return ebp-0x4 == 0x0e+ceil((0x9886-0x21)/0x41)
+	mov		esp,ebp
+	pop		ebp
+	ret
+	
+=> asm2(0xe, 0x21) == 0x267

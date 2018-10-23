@@ -1,0 +1,22 @@
+There are four functions in main.
+
+header: 	Useless garbage
+set_timer:	Trigger exit after 3 second
+get_key:	Function that creates a key using calculate_key
+print_flag:	Function that calls decrypt_flag with the key and prints the decrypted flag
+
+The key is set to be F(0x186B5).
+When F(x >= 5) = F(x-1)-F(x-2)+F(x-3)-F(x-4)+F(x-5)*0x1234
+And  F(x < 5)  = x*x+0x2345
+
+We can write recursive program to calculate this.
+But, this will take a long time using the straightforward way.
+
+So instead of just calling to F(x) every time we will calculate
+every value of F from 0 to 0x186B5 and save them in array for faster computation of the next x value (see be-quick-or-be-dead-2.py/.c for details)
+
+So result key is 1038912825 (see the file be-quick-or-be-dead-2.c for details).
+
+We can patch the program to return this value.
+Or, as I did, disable the timer ("handle SIGALRM ignore" in gdb)
+	and manually skip the function call and set the returned value.

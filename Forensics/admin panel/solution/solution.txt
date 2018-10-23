@@ -1,0 +1,4 @@
+The pcap contains several HTTP requests.
+One is for the login page with the flag as password.
+
+(user=admin&password=picoCTF{n0ts3cur3_13597b43})

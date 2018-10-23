@@ -1,0 +1,21 @@
+The server response:
+
+Rules:
+() + () = ()()                                      => [combine]
+((())) + () = ((())())                              => [absorb-right]
+() + ((())) = (()(()))                              => [absorb-left]
+(())(()) + () = (())(()())                          => [combined-absorb-right]
+() + (())(()) = (()())(())                          => [combined-absorb-left]
+(())(()) + ((())) = ((())(())(()))                  => [absorb-combined-right]
+((())) + (())(()) = ((())(())(()))                  => [absorb-combined-left]
+() + (()) + ((())) = (()()) + ((())) = ((()())(())) => [left-associative]
+
+Example:
+(()) + () = () + (()) = (()())
+
+Let's start with a warmup.
+(()) + ((())()) = ???
+
+>
+
+So we must answer questions of increasing complexity to get the flag using the rules

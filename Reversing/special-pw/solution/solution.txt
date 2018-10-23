@@ -1,0 +1,9 @@
+I compiled the assembly using pwntools with the script compile.py
+	for easier reversing.
+
+You can see in the assembly code that loops on the content of argv
+	XOR it with argv[1] and preforms rotations on some adjacent bytes.
+The answer then compared with some data string.
+	
+The script solve.py contains the same encryption code and deception code 
+	that does the opposite and prints the flag.

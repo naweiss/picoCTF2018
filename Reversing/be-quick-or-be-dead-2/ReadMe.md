@@ -1,0 +1,4 @@
+Name: be-quick-or-be-dead-2
+Score: 275
+Description: As you enjoy this <a href="https://www.youtube.com/watch?v=CTt1vk9nM9c">music</a> even more, another executable <a href='//2018shell1.picoctf.com/static/b05a612630e28214b69389bc4013a6e6/be-quick-or-be-dead-2'>be-quick-or-be-dead-2</a> shows up. Can you run this fast enough too? You can also find the executable in /problems/be-quick-or-be-dead-2_0_04f4c579185361da6918bbc2fc9dcb7b.
+<details><summary>Hint #1</summary>Can you call stuff without executing the entire program?</details><details><summary>Hint #2</summary>What will the key finally be?</details>

@@ -1,0 +1,4 @@
+Name: HEEEEEEERE'S Johnny!
+Score: 100
+Description: Okay, so we found some important looking files on a linux computer. Maybe they can be used to get a password to the process. Connect with <code>nc 2018shell1.picoctf.com 35225</code>. Files can be found here: <a href='//2018shell1.picoctf.com/static/a488bb3c175bc843e0fbce95fff920d9/passwd'>passwd</a> <a href='//2018shell1.picoctf.com/static/a488bb3c175bc843e0fbce95fff920d9/shadow'>shadow</a>.
+<details><summary>Hint #1</summary>If at first you don't succeed, try, try again. And again. And again.</details><details><summary>Hint #2</summary>If you're not careful these kind of problems can really "rockyou".</details>

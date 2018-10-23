@@ -1,0 +1,9 @@
+The given python code read the given map file and calculate series of values passed into logic gates.
+Every value is stored in the array and can be used as input to another gate.
+At the end the some gate value is calculated and compared to true.
+The first inputs are given by the key binary digits and the other ones are inputs from previous gates.
+
+Given a map we must find a key that results true as the output of the system.
+We can use z3 (SAT solver) to declare all the constrains and find input the satisfies them.
+
+Look at solve.py to see how it's done.

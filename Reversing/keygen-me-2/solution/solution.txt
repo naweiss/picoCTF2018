@@ -1,0 +1,25 @@
+The executable reads a string and checks it against multiple constraints.
+If all are satisfied the flag is printed.
+
+The list of constraints is:
+
+All the characters are in a custom alphabet "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+Length is 16-bytes
+(ord(key[0])+ord(key[1])) % 36 == 14
+(ord(key[2])+ord(key[3])) % 36 == 24
+(ord(key[2])-ord(key[0])) % 36 == 6
+(ord(key[1])+ord(key[3])+ord(key[5])) % 36 == 4
+(ord(key[2])+ord(key[4])+ord(key[6])) % 36 == 13
+(ord(key[3])+ord(key[4])+ord(key[5])) % 36== 22
+(ord(key[6])+ord(key[8])+ord(key[10])) % 36 == 31
+(ord(key[1])+ord(key[4])+ord(key[7])) % 36 == 7
+(ord(key[9])+ord(key[12])+ord(key[15])) % 36 == 20
+(ord(key[13])+ord(key[14])+ord(key[15])) % 36 == 12
+(ord(key[8])+ord(key[9])+ord(key[10])) % 36 == 27
+(ord(key[7])+ord(key[12])+ord(key[13])) % 36 == 23
+
+We can use z3 (SAT solver) to declare all the constrains and find input the satisfies them.
+Look at solve_v2.py to see how it's done.
+
+Or wisely brute-force the password.
+Look at solve.py to see how it's done.

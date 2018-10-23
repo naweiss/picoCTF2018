@@ -1,0 +1,14 @@
+The program gives us two options (exit is not an option ;) )
+1 - Buy useless thing: Costs 1000$, we can buy any number of this item 
+		as long as we have the money for it.
+2 - Buy the real flag: We must pay 100000$ but we start with 1100 :<
+
+There is integer overflow in the first option.
+For example, if we will buy MAX_INT-500 (2147483147) items
+	it will cost us 2147483147000$ but MAX_INT is 2147483147
+	so it will become -501000$ and will will gain 501000$.
+
+Now we can buy the actual flag.
+
+Note: the flag is embedded in the binary 
+	so we can use the string command to find the flag

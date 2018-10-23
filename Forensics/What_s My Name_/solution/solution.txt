@@ -1,0 +1,2 @@
+Open via Wireshark and use the DNS filter.
+Wireshark shows DNS request and response, the response contains flag.

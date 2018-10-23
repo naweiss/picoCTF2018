@@ -1,0 +1,13 @@
+There are four functions in main.
+
+header: 	Useless garbage
+set_timer:	Trigger exit after 1 second
+get_key:	Function that creates a key using calculate_key
+print_flag:	Function that calls decrypt_flag with the key and prints the decrypted flag
+
+The executable exits after a second :< too fast to print the decrypted flag.
+
+We can run the executable via gdb and disable the timer using:
+(gdb) handle SIGALRM ignore
+
+Now the flag is printed

@@ -1,0 +1,8 @@
+If we look at the binary, we  will find function named check_password.
+This function implements base64 encoding.
+
+And the password is compared with:
+cGljb0NURntiQXNFXzY0X2VOQ29EaU5nX2lTX0VBc1lfMTk1MTA2ODN9
+
+base64 decoded:
+picoCTF{bAsE_64_eNCoDiNg_iS_EAsY_19510683}

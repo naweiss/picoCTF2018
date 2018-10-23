@@ -1,0 +1,25 @@
+The code check if all the characters are in a custom alphabet: 
+	"0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+The executable also implements some sort of CRC.
+The CRC is calculated on the first 15 bytes and compared to the last byte.
+
+So, we can generate random 15 bytes (For example: AAAABBBBCCCCDDD)
+And we just need to calculate the CRC and set the value of the last byte.
+
+You can do this manually using gdb:
+$ gdb --args ./activate AAAABBBBCCCCDDDX
+(gdb) b *0x08048813
+(gdb) r
+(gdb) i r ebx
+
+Now change the last byte so it will match the value of ebx.
+Note: The value is index in the alphabet.
+
+In our case the full key is:
+	"AAAABBBBCCCCDDD8"
+
+You can run
+../activate AAAABBBBCCCCDDD8
+
+Note: you can look at solve.py for the CRC algorithm and working key-gen based on the method specified above

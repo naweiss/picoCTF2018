@@ -1,0 +1,4 @@
+Name: core
+Score: 350
+Description: This <a href='//2018shell1.picoctf.com/static/4b1119a17b97629f78128cd2746b5920/print_flag'>program</a> was about to print the flag when it died.  Maybe the flag is still in this <a href='//2018shell1.picoctf.com/static/4b1119a17b97629f78128cd2746b5920/core'>core</a> file that it dumped?  Also available at /problems/core_4_0cb5abf1372990e2b85bbe73dec0d95f on the shell server.
+<details><summary>Hint #1</summary>What is a core file?</details><details><summary>Hint #2</summary>You may find this <a href=http://darkdust.net/files/GDB%20Cheat%20Sheet.pdf>reference</a> helpful.</details><details><summary>Hint #3</summary>Try to figure out where the flag was read into memory using the disassembly and <a href=https://linux.die.net/man/1/strace>strace</a>.</details><details><summary>Hint #4</summary>You should study the format options on the cheat sheet and use the examine (x) or print (p) commands. disas may also be useful.</details>

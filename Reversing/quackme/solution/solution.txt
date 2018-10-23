@@ -1,0 +1,12 @@
+The executable calls do_magic which reads a string 
+	and xors every character of it with constant values (sekrutBuffer).
+	
+Then it checks if the result is the greeting message:
+
+"You have now entered the Duck Web, and you're in for a honkin' good time.
+Can you figure out my trick?"
+
+The length of sekrutBuffer is 25 so the password is the same length.
+We can xor the greeting message with sekrutBuffer to find what the input must be.
+
+Look at solution.py for details. 

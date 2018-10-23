@@ -1,0 +1,4 @@
+Name: assembly-0
+Score: 150
+Description: What does asm0(0xaa,0xf2) return? Submit the flag as a hexadecimal value (starting with '0x'). NOTE: Your submission for this question will NOT be in the normal flag format. <a href='//2018shell1.picoctf.com/static/5359d5442f2379ae9948dfeebe80d8f8/intro_asm_rev.S'>Source</a> located in the directory at /problems/assembly-0_2_485b2d48345b19addbeb06a36aabdc74.
+<details><summary>Hint #1</summary>basical assembly <a href="https://www.tutorialspoint.com/assembly_programming/assembly_basic_syntax.htm">tutorial</a></details><details><summary>Hint #2</summary>assembly <a href="https://www.tutorialspoint.com/assembly_programming/assembly_registers.htm">registers</a></details>

@@ -1,0 +1,4 @@
+Name: absolutely relative
+Score: 250
+Description: In a filesystem, everything is relative ¯\_(ツ)_/¯. Can you find a way to get a flag from this <a href='//2018shell1.picoctf.com/static/94e0cff2fa6fb11f5c85edccb8144415/absolutely-relative'>program</a>? You can find it in /problems/absolutely-relative_4_bef88c36784b44d2585bb4d2dbe074bd on the shell server. <a href='//2018shell1.picoctf.com/static/94e0cff2fa6fb11f5c85edccb8144415/absolutely-relative.c'>Source</a>.
+<details><summary>Hint #1</summary>Do you have to run the program in the same directory? (⊙.☉)7</details><details><summary>Hint #2</summary>Ever used a text editor? Check out the program 'nano'</details>

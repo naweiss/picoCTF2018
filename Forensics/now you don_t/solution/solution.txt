@@ -1,0 +1,2 @@
+We opened the image in GIMP and selected based on red color.
+The colored black the rest.

@@ -1,0 +1,4 @@
+Because the executable reads the permissions file relatively,
+	we can create file named permission.txt with the content yes
+	and run the program from that directory and it will use our file 
+	instead of the original one in the same directory of the executable.

@@ -1,0 +1,6 @@
+Install run zsteg on ../husky.png and this appears:
+
+$ zsteg -a ../husky.png
+b1,rgb,lsb,xy       .. text: "picoCTF{r34d1ng_b37w33n_7h3_by73s}"
+
+Thanks to https://twitter.com/nnmontag for the solution.

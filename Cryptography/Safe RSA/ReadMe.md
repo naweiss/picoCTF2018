@@ -1,0 +1,4 @@
+Name: Safe RSA
+Score: 250
+Description: Now that you know about RSA can you help us decrypt this <a href='//2018shell1.picoctf.com/static/72fdaf8e161f40bd164366ec82b1b82d/ciphertext'>ciphertext</a>? We don't have the decryption key but something about those values looks funky..
+<details><summary>Hint #1</summary>RSA <a href="https://en.wikipedia.org/wiki/RSA_(cryptosystem)">tutorial</a></details><details><summary>Hint #2</summary>Hmmm that e value looks kinda small right?</details><details><summary>Hint #3</summary>These are some really big numbers.. Make sure you're using functions that don't lose any precision!</details>

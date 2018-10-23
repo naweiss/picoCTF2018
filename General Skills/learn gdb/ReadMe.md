@@ -1,0 +1,4 @@
+Name: learn gdb
+Score: 300
+Description: Using a debugging tool will be extremely useful on your missions. Can you run this <a href='//2018shell1.picoctf.com/static/e3b4008465236904d87a6d730b764027/run'>program</a> in gdb and find the flag? You can find the file in /problems/learn-gdb_2_32e08c18932eb88649e9b97f3020b9f5 on the shell server.
+<details><summary>Hint #1</summary>Try setting breakpoints in gdb</details><details><summary>Hint #2</summary>Try and find a point in the program after the flag has been read into memory to break on</details><details><summary>Hint #3</summary>Where is the flag being written in memory?</details>

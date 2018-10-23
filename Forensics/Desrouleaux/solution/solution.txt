@@ -1,0 +1,4 @@
+The server gave us some JSON file and were supposed to answer some questions about it.
+See solve.js for details (run in the browser and look at the console).
+
+pretty boring stuff.

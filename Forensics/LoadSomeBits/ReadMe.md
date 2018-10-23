@@ -1,0 +1,4 @@
+Name: LoadSomeBits
+Score: 550
+Description: Can you find the flag encoded inside this <a href='//2018shell1.picoctf.com/static/1c1e18c1e6a0f2f3235c7f054b9ff659/pico2018-special-logo.bmp'>image</a>? You can also find the file in /problems/loadsomebits_4_7be73021cd0c9c84b08937323b0d6ae1 on the shell server.
+<details><summary>Hint #1</summary>Look through the Least Significant Bits for the image</details><details><summary>Hint #2</summary>If you interpret a binary sequence (seq) as ascii and then try interpreting the same binary sequence from an offset of 1 (seq[1:]) as ascii do you get something similar or completely different?</details>
