@@ -1,0 +1,10 @@
+lets use https://quipqiup.com/ again
+
+The ?uic? bro?n fo? ?um?s over the la?y do?. I can't believe this is such an easy ?roblem in ?ico. It's almost as if I solved a ?roblem already! O?ay, fine. Here's the fla?: ?icoCTF{substitution_ci?hers_are_too_easy_s?s?tn?ibo}
+
+Add clues based on your guesses:
+q=p n=q k=k m=w e=x g=j z=z a=g
+
+Result:
+
+The quick brown fox jumps over the lazy dog. I can't believe this is such an easy problem in Pico. It's almost as if I solved a problem already! Okay, fine. Here's the flag: picoCTF{substitution_ciphers_are_too_easy_sgsgtnpibo}

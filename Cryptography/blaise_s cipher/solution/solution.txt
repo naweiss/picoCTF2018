@@ -1,0 +1,7 @@
+This is a Vigenere Cipher we just doesn't know the key.
+We can use this https://www.dcode.fr/vigenere-cipher and the option:
+	TRY TO DECRYPT AUTOMATICALLY (STATISTICAL ANALYSIS)
+
+The key was FLAG :)
+
+We found this in the text: picoCTF{v1gn3r3_c1ph3rs_ar3n7_bad_5352bf72}
